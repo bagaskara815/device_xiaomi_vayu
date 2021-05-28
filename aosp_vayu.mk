@@ -14,6 +14,12 @@ $(call inherit-product, device/xiaomi/vayu/device.mk)
 # Inherit common AOSP configurations
 $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
+# b/189477034: Bypass build time check on uses_libs until vendor fixes all their apps
+PRODUCT_BROKEN_VERIFY_USES_LIBRARIES := true
+RELAX_USES_LIBRARY_CHECK := true
+
+TARGET_BOOT_ANIMATION_RES := 1080
+
 PRODUCT_NAME := aosp_vayu
 PRODUCT_DEVICE := vayu
 PRODUCT_BRAND := POCO
