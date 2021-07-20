@@ -28,6 +28,7 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     ro.surface_flinger.use_content_detection_for_refresh_rate=true
 
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
+    debug.sf.layer_caching_active_layer_timeout_ms=1000 \
     debug.sf.use_phase_offsets_as_durations=1 \
     debug.sf.late.sf.duration=10500000 \
     debug.sf.late.app.duration=20500000 \
