@@ -190,6 +190,12 @@ service vendor.spdaemon /vendor/bin/spdaemon
     group system
     shutdown critical
 
+service vendor.adsprpcd /vendor/bin/adsprpcd
+   class main
+   user media
+   group media
+   disabled
+
 service vendor.sec_nvm /vendor/bin/sec_nvm
     class core
     user system
