@@ -260,3 +260,9 @@ service vendor.nfc_hal_service /vendor/bin/hw/android.hardware.nfc@1.2-service
     group nfc
     task_profiles ServiceCapacityLow
     disabled
+
+service adsprpcd /vendor/bin/adsprpcd
+   class main
+   user media
+   group media
+   disabled
