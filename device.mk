@@ -32,6 +32,7 @@ PRODUCT_TARGET_VNDK_VERSION := 30
 
 # Dynamic partitions setup
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
+PRODUCT_BUILD_SUPER_PARTITION := false
 
 # Audio
 PRODUCT_PACKAGES += \
@@ -125,7 +126,8 @@ PRODUCT_PACKAGES += \
 
 # Charger
 PRODUCT_PACKAGES += \
-    libsuspend
+    libsuspend \
+    charger_res_images
 
 # Config Store
 PRODUCT_PACKAGES += \

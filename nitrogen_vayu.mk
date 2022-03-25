@@ -11,10 +11,13 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit device configurations
 $(call inherit-product, device/xiaomi/vayu/device.mk)
 
-# Inherit common DerpFest configurations
-$(call inherit-product, vendor/derp/config/common_full_phone.mk)
+# Inherit common Nitrogen configurations
+$(call inherit-product, vendor/nitrogen/products/common.mk)
 
-PRODUCT_NAME := derp_vayu
+TARGET_SCREEN_HEIGHT := 2400
+TARGET_SCREEN_WIDTH := 1080
+
+PRODUCT_NAME := nitrogen_vayu
 PRODUCT_DEVICE := vayu
 PRODUCT_BRAND := POCO
 PRODUCT_MODEL := Poco X3 Pro
