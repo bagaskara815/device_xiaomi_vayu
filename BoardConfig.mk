@@ -19,7 +19,7 @@ TARGET_CPU_ABI2 :=
 TARGET_CPU_VARIANT := cortex-a76
 
 TARGET_2ND_ARCH := arm
-TARGET_2ND_ARCH_VARIANT := armv8-2a
+TARGET_2ND_ARCH_VARIANT := armv8-a
 TARGET_2ND_CPU_ABI := armeabi-v7a
 TARGET_2ND_CPU_ABI2 := armeabi
 TARGET_2ND_CPU_VARIANT := cortex-a76
@@ -58,6 +58,9 @@ TARGET_DISABLED_UBWC := true
 # Camera
 TARGET_USES_QTI_CAMERA_DEVICE := true
 
+# Charger Mode
+BOARD_CHARGER_ENABLE_SUSPEND := true
+
 # Filesystem
 TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/configs/config.fs
 
@@ -82,6 +85,7 @@ BOARD_KERNEL_CMDLINE += lpm_levels.sleep_disabled=1 service_locator.enable=1
 BOARD_KERNEL_CMDLINE += swiotlb=2048 msm_rtb.filter=0x237
 BOARD_KERNEL_CMDLINE += loop.max_part=7 androidboot.usbcontroller=a600000.dwc3
 BOARD_KERNEL_CMDLINE += androidboot.init_fatal_reboot_target=recovery
+BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 BOARD_KERNEL_CMDLINE += kpti=off
 BOARD_KERNEL_PAGESIZE := 4096
 BOARD_BOOTIMG_HEADER_VERSION := 2
@@ -169,7 +173,7 @@ ENABLE_VENDOR_RIL_SERVICE := true
 
 # Sepolicy
 include device/qcom/sepolicy_vndr/SEPolicy.mk
-
+SELINUX_IGNORE_NEVERALLOWS=true
 SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/private
 SYSTEM_EXT_PUBLIC_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/public
 BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
@@ -220,3 +224,7 @@ WPA_SUPPLICANT_VERSION := VER_0_8_X
 
 #Inherit from the proprietary version
 -include vendor/xiaomi/vayu/BoardConfigVendor.mk
+
+PRODUCT_SOONG_NAMESPACES += hardware/qcom-caf/sm8150/display
+PRODUCT_SOONG_NAMESPACES += hardware/qcom-caf/sm8150/audio
+PRODUCT_SOONG_NAMESPACES += hardware/qcom-caf/sm8150/media
