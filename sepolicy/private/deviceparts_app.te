@@ -41,5 +41,3 @@ allow deviceparts_app {
 allow deviceparts_app sysfs_vibrator:dir search;
 allow deviceparts_app sysfs_vibrator:file rw_file_perms;
 
-get_prop(deviceparts_app, deviceparts_prop)
-set_prop(deviceparts_app, deviceparts_prop)
