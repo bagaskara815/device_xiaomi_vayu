@@ -11,13 +11,12 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit device configurations
 $(call inherit-product, device/xiaomi/vayu/device.mk)
 
-# Inherit common Nitrogen configurations
-$(call inherit-product, vendor/nitrogen/products/common.mk)
+# Inherit common evervolv configurations
+$(call inherit-product, $(SRC_EVERVOLV_DIR)/config/common_full_phone.mk)
 
-TARGET_SCREEN_HEIGHT := 2400
-TARGET_SCREEN_WIDTH := 1080
+BOOT_ANIMATION_SIZE := 1080p
 
-PRODUCT_NAME := nitrogen_vayu
+PRODUCT_NAME := ev_vayu
 PRODUCT_DEVICE := vayu
 PRODUCT_BRAND := POCO
 PRODUCT_MODEL := Poco X3 Pro
