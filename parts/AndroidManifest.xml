@@ -45,6 +45,15 @@
             </intent-filter>
         </receiver>
 
+        <receiver
+            android:name=".GameSessionReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="io.chaldeaprjkt.gamespace.action.GAME_START" />
+                <action android:name="io.chaldeaprjkt.gamespace.action.GAME_STOP" />
+            </intent-filter>
+        </receiver>
+
         <activity
             android:name=".MainActivity"
             android:exported="true"
