@@ -16,7 +16,7 @@
 -->
 <resources>
     <!-- App Name -->
-    <string name="deviceparts_label" translatable="false">Device Parts</string>
+    <string name="deviceparts_label" translatable="false">Device features</string>
 
     <string name="enabled">Enabled</string>
     <string name="disabled">Disabled</string>
