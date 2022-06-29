@@ -13,8 +13,8 @@ persist.device_config.runtime_native_boot.iorap_readahead_enable=true
 iorapd.perfetto.enable=true
 
 # LMKD
-ro.config.low_ram=false
-ro.lmk.log_stats=false
+ro.lmk.filecache_min_kb=153600
+ro.lmk.stall_limit_critical=40
 
 # Transcoding related property.
 debug.media.transcoding.codec_max_operating_rate_720P=240
