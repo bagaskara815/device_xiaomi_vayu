@@ -176,14 +176,14 @@ void vendor_load_properties() {
         set_device_props(
             fp,
             fp_desc,
-            "POCO", "bhima", "M2102J20SI", "bhima_global", "POCO X3 Pro");
-        property_override("ro.product.mod_device", "bhima_global");
+            "POCO", "bhima", "M2102J20SI", "aospa_bhima", "POCO X3 Pro");
+        property_override("ro.product.mod_device", "aospa_bhima");
     } else {
         set_device_props(
             fp,
             fp_desc,
-            "POCO", "vayu", "M2102J20SG", "vayu_global", "POCO X3 Pro");
-        property_override("ro.product.mod_device", "vayu_global");
+            "POCO", "vayu", "M2102J20SG", "aospa_vayu", "POCO X3 Pro");
+        property_override("ro.product.mod_device", "aospa_vayu");
     }
 
     load_dalvik_properties();
