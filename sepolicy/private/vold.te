@@ -1,0 +1,1 @@
+allow vold vold:capability { setgid  setuid };
