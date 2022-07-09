@@ -1,2 +1,4 @@
 allow fsck_untrusted system_file:file { entrypoint };
-allow fsck_untrusted sysfs_dm:dir { search };
+allow fsck_untrusted sysfs_dm:dir { search open getattr search write create };
+allow fsck_untrusted sysfs_dm:file { read open getattr write create };
+allow fsck_untrusted fsck_untrusted:capability { dac_override  dac_read_search };
