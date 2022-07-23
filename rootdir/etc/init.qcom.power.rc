@@ -138,3 +138,6 @@ on charger
     start vendor.thermal.symlinks
     start vendor.thermal-engine
     trigger enable-thermal-hal
+
+on property:vendor.thermal.config=*
+    restart vendor.thermal-engine
