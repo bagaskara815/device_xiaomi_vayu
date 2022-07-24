@@ -29,6 +29,10 @@ public class GameSessionReceiver extends BroadcastReceiver {
     private static final String GAME_START = "io.chaldeaprjkt.gamespace.action.GAME_START";
     private static final String GAME_STOP = "io.chaldeaprjkt.gamespace.action.GAME_STOP";
 
+    private static final String THERMAL_PROP = "persist.deviceparts.game.thermal";
+
+    private String mCurrentState = "normal";
+
     @Override
     public void onReceive(final Context context, Intent intent) {
         if (intent.getAction().equals(GAME_START)) {
@@ -39,10 +43,18 @@ public class GameSessionReceiver extends BroadcastReceiver {
     }
 
     private void onGameStart() {
-        SystemProperties.set("persist.deviceparts.game.thermal", "game");
+        setThermalState("game");
     }
 
     private void onGameStop() {
-        SystemProperties.set("persist.deviceparts.game.thermal", "normal");
+        setThermalState("normal");
+    }
+
+    private void setThermalState(String state) {
+        if (mCurrentState.equals(state))
+            return;
+
+        SystemProperties.set(THERMAL_PROP, state);
+        mCurrentState = state;
     }
 }
