@@ -139,5 +139,5 @@ on charger
     start vendor.thermal-engine
     trigger enable-thermal-hal
 
-on property:vendor.thermal.config=*
+on property:vendor.thermal.engine=*
     restart vendor.thermal-engine

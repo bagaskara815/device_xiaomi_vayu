@@ -25,8 +25,8 @@ on property:persist.deviceparts.lcd.cabc=*
     write /sys/devices/platform/soc/soc:qcom,dsi-display-primary/cabc ${persist.deviceparts.lcd.cabc}
 
 on property:persist.deviceparts.game.thermal=game
-    setprop vendor.thermal.config thermal-engine-game.conf
+    setprop vendor.thermal.engine thermal-engine-game.conf
 
 on property:persist.deviceparts.game.thermal=normal
-    setprop vendor.thermal.config thermal-engine.conf
+    setprop vendor.thermal.engine thermal-engine.conf
 
