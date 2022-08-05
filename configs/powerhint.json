@@ -7,7 +7,8 @@
         "9999999",
         "1708800",
         "1382400",
-        "1113600"
+        "1113600",
+        "576000"
       ],
       "DefaultIndex": 0,
       "ResetOnInit": true
@@ -32,7 +33,8 @@
         "1920000",
         "1804800",
         "1708800",
-        "1401600"
+        "1401600",
+        "710400"
       ],
       "DefaultIndex": 0,
       "ResetOnInit": true
@@ -59,7 +61,8 @@
         "2227200",
         "2016000",
         "1804800",
-        "1401600"
+        "1401600",
+        "825600"
       ],
       "DefaultIndex": 0,
       "ResetOnInit": true
@@ -507,6 +510,24 @@
       "Node": "TASchedtunePreferIdle",
       "Duration": 0,
       "Value": "0"
+    },
+    {
+      "PowerHint": "DISPLAY_INACTIVE",
+      "Node": "CPUBigPlusClusterMaxFreq",
+      "Duration": 0,
+      "Value": "825600"
+    },
+    {
+      "PowerHint": "DISPLAY_INACTIVE",
+      "Node": "CPUBigClusterMaxFreq",
+      "Duration": 0,
+      "Value": "710400"
+    },
+    {
+      "PowerHint": "DISPLAY_INACTIVE",
+      "Node": "CPULittleClusterMaxFreq",
+      "Duration": 0,
+      "Value": "576000"
     },
     {
       "PowerHint": "CAMERA_LAUNCH",
