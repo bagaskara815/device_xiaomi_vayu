@@ -491,6 +491,24 @@
       "Value": "2"
     },
     {
+      "PowerHint": "DISPLAY_INACTIVE",
+      "Node": "TASchedtuneBoost",
+      "Duration": 0,
+      "Value": "0"
+    },
+    {
+      "PowerHint": "DISPLAY_INACTIVE",
+      "Node": "FgSchedtunePreferIdle",
+      "Duration": 0,
+      "Value": "0"
+    },
+    {
+      "PowerHint": "DISPLAY_INACTIVE",
+      "Node": "TASchedtunePreferIdle",
+      "Duration": 0,
+      "Value": "0"
+    },
+    {
       "PowerHint": "CAMERA_LAUNCH",
       "Node": "CPUBigClusterMaxFreq",
       "Duration": 1000,
@@ -531,24 +549,6 @@
       "Node": "PMQoSCpuDmaLatency",
       "Duration": 1000,
       "Value": "2c"
-    },
-    {
-      "PowerHint": "DISPLAY_INACTIVE",
-      "Node": "TASchedtuneBoost",
-      "Duration": 0,
-      "Value": "0"
-    },
-    {
-      "PowerHint": "DISPLAY_INACTIVE",
-      "Node": "FgSchedtunePreferIdle",
-      "Duration": 0,
-      "Value": "0"
-    },
-    {
-      "PowerHint": "DISPLAY_INACTIVE",
-      "Node": "TASchedtunePreferIdle",
-      "Duration": 0,
-      "Value": "0"
     },
     {
       "PowerHint": "CAMERA_STREAMING_MID",
