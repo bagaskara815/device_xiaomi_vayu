@@ -24,7 +24,7 @@ cc_library {
         "disp-power/DisplayLowPower.cpp",
         "disp-power/InteractionHandler.cpp",
     ],
-     shared_libs: [
+    shared_libs: [
         "libbase",
         "libcutils",
         "liblog",
@@ -40,7 +40,8 @@ cc_binary {
     vintf_fragments: ["aidl/android.hardware.power-service.vayu.xml"],
     vendor: true,
     shared_libs: [
-        "android.hardware.power-V2-ndk",
+        "android.hardware.power-V3-ndk",
+        "libadaptivecpu",
         "libbase",
         "libcutils",
         "liblog",
