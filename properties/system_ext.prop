@@ -3,3 +3,6 @@ persist.vendor.dpm.feature=11
 
 # DeviceParts
 persist.deviceparts.lcd.cabc=1
+
+# Bluetooth
+bluetooth.device.class_of_device=90,2,12
