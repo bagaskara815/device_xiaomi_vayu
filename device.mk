@@ -506,6 +506,12 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/com.nxp.mifare.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/sku_vayu/com.nxp.mifare.xml
 
 # Thermal HAL
+SOONG_CONFIG_NAMESPACES += thermal_hal_feature
+SOONG_CONFIG_thermal_hal_feature += \
+    pid \
+
+SOONG_CONFIG_thermal_hal_feature_pid ?= apply_1_0
+
 PRODUCT_PACKAGES += \
     android.hardware.thermal@2.0-service.pixel \
     thermal_symlinks
