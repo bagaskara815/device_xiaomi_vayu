@@ -22,6 +22,15 @@
     <string-array name="config_cameraAuxPackageExcludeList" translatable="false">
         <item>org.telegram.messenger</item>
         <item>org.thunderdog.challegram</item>
+        <item>com.whatsapp</item>
+        <item>nekox.messenger</item>
+        <item>com.intsig.camscanner</item>
+        <item>com.instagram.android</item>
+        <item>com.microsoft.emmx</item>
+        <item>org.mozilla.firefox</item>
+        <item>com.lazada.android</item>
+        <item>com.tokopedia.tkpd</item>
+        <item>com.tokopedia.sellerapp</item>
     </string-array>
 
 </resources>
