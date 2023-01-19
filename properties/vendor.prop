@@ -102,6 +102,7 @@ debug.sdm.support_writeback=0
 debug.renderengine.backend=skiaglthreaded
 debug.sf.enable_gl_backpressure=1
 debug.sf.disable_client_composition_cache=1
+debug.sf.predict_hwc_composition_strategy=0
 persist.sys.sf.native_mode=0
 renderthread.skia.reduceopstasksplitting=true
 ro.gfx.driver.1=com.qualcomm.qti.gpudrivers.msmnile.api30
