@@ -24,10 +24,6 @@
     <!-- Device specific doze package -->
     <string name="config_customDozePackage">org.lineageos.settings/org.lineageos.settings.doze.DozeSettingsActivity</string>
 
-    <!--DerpFest Maintainer-->
-    <string name="maintainer_name">Bagaskara (Bagaskara815)</string>
-    <string name="maintainer_telegram">https://t.me/Bagaskara815</string>
-
     <!-- Whether to show min/max refresh rate in display settings -->
     <bool name="config_show_refresh_rate_controls">true</bool>
 
