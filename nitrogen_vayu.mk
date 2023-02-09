@@ -14,6 +14,9 @@ $(call inherit-product, device/xiaomi/vayu/device.mk)
 # Inherit common Nitrogen configurations
 $(call inherit-product, vendor/nitrogen/products/common.mk)
 
+# Gapps
+$(call inherit-product, vendor/google/gms/config.mk)
+
 TARGET_SCREEN_HEIGHT := 2400
 TARGET_SCREEN_WIDTH := 1080
 
