@@ -211,6 +211,9 @@ vendor/lib64/libvidhance.so
 vendor/lib64/libXMFD_AgeGender.so
 vendor/lib64/lib_denoiser3.so
 
+# Camera (miuicamera)
+vendor/lib64/libmiai_portraitsupernight.so
+
 # Camera (arcsoft)
 vendor/lib64/libarcsoft_beautyshot.so
 vendor/lib64/libarcsoft_bodyslim.so
