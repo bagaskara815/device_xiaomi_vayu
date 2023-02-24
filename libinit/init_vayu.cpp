@@ -80,6 +80,7 @@ void load_bhima()
     property_override("ro.product.device", "bhima");
     property_override("ro.product.manufacturer", "Xiaomi");
     property_override("ro.product.model", "M2102J20SI");
+    property_override("ro.product.mod_device", "bhima_global");
     property_override("ro.product.name", "bhima_in");
 }
 
@@ -89,6 +90,7 @@ void load_vayu()
     property_override("ro.product.device", "vayu");
     property_override("ro.product.manufacturer", "Xiaomi");
     property_override("ro.product.model", "M2102J20SG");
+    property_override("ro.product.mod_device", "vayu_global");
     property_override("ro.product.name", "vayu");
 }
 
