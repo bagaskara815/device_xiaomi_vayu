@@ -89,8 +89,8 @@ vendor.display.idle_time_inactive=0
 drm.service.enabled=true
 
 # Fling velocities
-ro.min.fling_velocity=140
-ro.max.fling_velocity=20000
+ro.min.fling_velocity=70
+ro.max.fling_velocity=21000
 
 # FM
 vendor.hw.fm.init=0
