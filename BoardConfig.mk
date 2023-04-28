@@ -91,6 +91,9 @@ ifeq ($(TARGET_PREBUILT_KERNEL),)
   TARGET_KERNEL_ADDITIONAL_FLAGS += LLVM=1
 endif
 
+# MiuiCamera
+-include vendor/xiaomi/miuicamera/BoardConfig.mk
+
 # Partitions
 BOARD_USERDATAIMAGE_FILE_SYSTEM_TYPE := f2fs
 
