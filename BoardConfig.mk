@@ -97,9 +97,6 @@ ifeq ($(TARGET_PREBUILT_KERNEL),)
   TARGET_KERNEL_CLANG_VERSION := r487747c
 endif
 
-# MiuiCamera
--include vendor/xiaomi/miuicamera/BoardConfig.mk
-
 # Partitions
 BOARD_USERDATAIMAGE_FILE_SYSTEM_TYPE := f2fs
 BOARD_PRODUCTIMAGE_PARTITION_RESERVED_SIZE := 104857600
