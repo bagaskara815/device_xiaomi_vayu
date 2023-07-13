@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/derp_vayu.mk
+    $(LOCAL_DIR)/nitrogen_vayu.mk
 
 COMMON_LUNCH_CHOICES := \
-    derp_vayu-eng \
-    derp_vayu-userdebug \
-    derp_vayu-user
+    nitrogen_vayu-eng \
+    nitrogen_vayu-userdebug \
+    nitrogen_vayu-user

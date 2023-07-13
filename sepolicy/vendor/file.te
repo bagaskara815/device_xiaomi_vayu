@@ -40,3 +40,5 @@ type sysfs_power_stats, sysfs_type, fs_type;
 type sysfs_power_stats_ignore, sysfs_type, fs_type;
 type sysfs_scsi_devices_0000, sysfs_type, fs_type;
 type sysfs_msm_wlan, sysfs_type, fs_type;
+
+type sysfs_battery_supply, fs_type, sysfs_type;
