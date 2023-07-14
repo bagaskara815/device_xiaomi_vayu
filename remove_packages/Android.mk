@@ -5,10 +5,13 @@ LOCAL_MODULE := RemovePackagesVayu
 LOCAL_MODULE_CLASS := APPS
 LOCAL_MODULE_TAGS := optional
 LOCAL_OVERRIDES_PACKAGES := \
-    Chrome-Stub \
+    Chrome64 \
     Drive \
     FilesPrebuilt  \
+	LatinImeGoogle \
     Maps \
+	PersonalSafety \
+	Photos \
     Symphonica \
     YouTube
 
