@@ -11,10 +11,13 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit device configurations
 $(call inherit-product, device/xiaomi/vayu/device.mk)
 
-# Inherit common DerpFest configurations
-$(call inherit-product, vendor/derp/config/common_full_phone.mk)
+# Inherit Carbon GSM telephony parts
+$(call inherit-product, vendor/carbon/config/gsm.mk)
 
-PRODUCT_NAME := derp_vayu
+# Inherit Carbon product configuration
+$(call inherit-product, vendor/carbon/config/common.mk)
+
+PRODUCT_NAME := carbon_vayu
 PRODUCT_DEVICE := vayu
 PRODUCT_BRAND := POCO
 PRODUCT_MODEL := Poco X3 Pro
@@ -33,4 +36,4 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     TARGET_DEVICE="vayu" \
     TARGET_PRODUCT="vayu"
 
-BUILD_FINGERPRINT := POCO/vayu_id/vayu:13/TKQ1.221013.002/V14.0.3.0.TJUIDXM:user/release-keys
+BUILD_FINGERPRINT := POCO/vayu_global/vayu:11/RKQ1.200826.002/V12.0.4.0.RJUMIXM:user/release-keys
