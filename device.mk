@@ -478,6 +478,10 @@ PRODUCT_PACKAGES += \
 # Properties
 include $(LOCAL_PATH)/properties/default.mk
 
+# QDCM
+PRODUCT_COPY_FILES += \
+    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/qdcm/,$(TARGET_COPY_OUT_VENDOR)/etc)
+
 # RIL
 PRODUCT_PACKAGES += \
     android.hardware.radio@1.6.vendor \
