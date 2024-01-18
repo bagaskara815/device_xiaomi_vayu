@@ -27,6 +27,7 @@ import org.lineageos.settings.dirac.DiracUtils;
 import org.lineageos.settings.doze.DozeUtils;
 import org.lineageos.settings.haptic.HapticUtils;
 import org.lineageos.settings.touchscreen.TouchFeatureUtils;
+import org.lineageos.settings.refreshrate.RefreshUtils;
 
 public class BootCompletedReceiver extends BroadcastReceiver {
 
@@ -41,8 +42,13 @@ public class BootCompletedReceiver extends BroadcastReceiver {
         } catch (Exception e) {
             Log.d(TAG, "Dirac is not present in system");
         }
+
+        // Doze
         DozeUtils.checkDozeService(context);
         TouchFeatureUtils.startService(context);
         HapticUtils.restoreLevel(context);
+
+        // Refreshrate
+        RefreshUtils.startService(context);
     }
 }
