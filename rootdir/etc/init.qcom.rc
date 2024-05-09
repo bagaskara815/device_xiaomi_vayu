@@ -399,6 +399,10 @@ on post-fs-data
     #Create dir for TUI
     mkdir /data/vendor/tui 0700 system drmrpc
 
+    # Dolby
+    mkdir /data/vendor/dolby 0770 media media
+    mkdir /data/vendor/multimedia 0775 system system
+
     #Make MTU adjusting
     write /proc/sys/net/ipv4/tcp_mtu_probing 1
 
