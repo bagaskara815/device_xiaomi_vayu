@@ -71,9 +71,6 @@
 # Persist subsystem
 /mnt/vendor/persist/subsys(/.*)?                                        u:object_r:persist_subsys_file:s0
 
-# Power
-/vendor/bin/hw/android\.hardware\.power-service\.xiaomi-libperfmgr      u:object_r:hal_power_default_exec:s0
-
 # Pixel Atrace
 /vendor/bin/hw/android\.hardware\.atrace@1.0-service\.pixel                                             u:object_r:hal_atrace_default_exec:s0
 
