@@ -18,7 +18,7 @@ package {
 }
 
 cc_library {
-    name: "libdisppower-vayu",
+    name: "libdisppower-pixel",
     proprietary: true,
     srcs: [
         "disp-power/DisplayLowPower.cpp",
@@ -33,11 +33,19 @@ cc_library {
     ],
 }
 
+// Deprecated, do not use
+// Use pixel-power-ext for vendor extension
+cc_library_headers {
+    name: "pixel_power_headers",
+    vendor: true,
+    export_include_dirs: ["hidl"],
+}
+
 cc_binary {
-    name: "android.hardware.power-service.vayu-libperfmgr",
+    name: "android.hardware.power-service.pixel-libperfmgr",
     relative_install_path: "hw",
-    init_rc: ["aidl/android.hardware.power-service.vayu-libperfmgr.rc"],
-    vintf_fragments: ["aidl/android.hardware.power-service.vayu.xml"],
+    init_rc: ["aidl/android.hardware.power-service.pixel-libperfmgr.rc"],
+    vintf_fragments: ["aidl/android.hardware.power-service.pixel.xml"],
     vendor: true,
     shared_libs: [
         "android.hardware.power-V2-ndk",
@@ -46,7 +54,7 @@ cc_binary {
         "liblog",
         "libutils",
         "libbinder_ndk",
-        "libdisppower-vayu",
+        "libdisppower-pixel",
         "libperfmgr",
         "libprocessgroup",
         "pixel-power-ext-V1-ndk",
