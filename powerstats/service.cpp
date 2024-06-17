@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-#define LOG_TAG "android.hardware.power.stats@1.0-service.xiaomi"
+#define LOG_TAG "android.hardware.power.stats@1.0-service.pixel"
 
 #include <android/log.h>
 #include <binder/IPCThreadState.h>
