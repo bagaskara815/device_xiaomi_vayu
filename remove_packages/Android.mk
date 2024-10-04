@@ -6,15 +6,18 @@ LOCAL_MODULE_CLASS := APPS
 LOCAL_MODULE_TAGS := optional
 LOCAL_OVERRIDES_PACKAGES := \
     Accord \
+    Chrome64 \
     Chrome \
     Chrome-Stub \
     ConnMO \
     Drive \
     DCMO \
+    FilesGoogle \
     FilesPrebuilt  \
     Gramophone \
     Maestro \
     Maps \
+    PersonalSafety \
     RecorderPrebuilt \
     SafetyHubPrebuilt \
     Symphonica \
