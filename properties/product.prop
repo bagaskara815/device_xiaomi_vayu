@@ -8,6 +8,9 @@ audio.sys.offload.pstimeout.secs=3
 # Charger
 ro.charger.enable_suspend=true
 
+# Graphics
+debug.graphics.game_default_frame_rate.disabled=true
+
 # IORap
 persist.device_config.runtime_native_boot.iorap_readahead_enable=true
 
