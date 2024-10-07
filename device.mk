@@ -374,7 +374,7 @@ PRODUCT_PACKAGES += \
 
 # Lights
 PRODUCT_PACKAGES += \
-    android.hardware.lights-service.vayu
+    android.hardware.light-service.xiaomi
 
 # Logging
 SPAMMY_LOG_TAGS := \
