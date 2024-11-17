@@ -20,9 +20,6 @@ PRODUCT_BRAND := POCO
 PRODUCT_MODEL := Poco X3 Pro
 PRODUCT_MANUFACTURER := Xiaomi
 
-PRODUCT_SYSTEM_NAME := vayu
-PRODUCT_SYSTEM_DEVICE := vayu
-
 DERP_BUILDTYPE := Official
 DERP_VERSION_APPEND_TIME_OF_DAY=true
 TARGET_NOT_USES_BLUR=true
@@ -32,8 +29,9 @@ TARGET_USES_MINI_GAPPS := true
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="vayu_id-user 13 TKQ1.221013.002 V14.0.3.0.TJUIDXM release-keys"
-    TARGET_DEVICE="vayu" \
-    TARGET_PRODUCT="vayu"
-
-BUILD_FINGERPRINT := POCO/vayu_id/vayu:13/TKQ1.221013.002/V14.0.3.0.TJUIDXM:user/release-keys
+    BuildDesc="vayu_id-user 13 TKQ1.221013.002 V14.0.3.0.TJUIDXM release-keys" \
+    BuildFingerprint=POCO/vayu_id/vayu:13/TKQ1.221013.002/V14.0.3.0.TJUIDXM:user/release-keys \
+    DeviceName=vayu \
+    DeviceProduct=vayu \
+    SystemDevice=vayu \
+    SystemName=vayu
