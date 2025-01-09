@@ -51,11 +51,6 @@ MALLOC_SVELTE := true
 MALLOC_SVELTE_FOR_LIBC32 := true
 
 # Display
-TARGET_USES_DISPLAY_RENDER_INTENTS := true
-TARGET_USES_DRM_PP := true
-TARGET_USES_GRALLOC1 := true
-TARGET_USES_HWC2 := true
-TARGET_USES_ION := true
 TARGET_SCREEN_DENSITY := 440
 TARGET_DISABLED_UBWC := true
 
@@ -100,6 +95,9 @@ endif
 
 # Lineage Health
 TARGET_HEALTH_CHARGING_CONTROL_SUPPORTS_BYPASS := false
+
+# Media
+TARGET_USES_ION := true
 
 # MiuiCamera
 -include vendor/xiaomi/miuicamera/BoardConfig.mk
