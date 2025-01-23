@@ -482,6 +482,10 @@ include $(LOCAL_PATH)/properties/default.mk
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/qdcm/,$(TARGET_COPY_OUT_VENDOR)/etc)
 
+# Quick Tap
+PRODUCT_PACKAGES += \
+    ColumbusService
+
 # RIL
 PRODUCT_PACKAGES += \
     android.hardware.radio@1.6.vendor \
