@@ -651,6 +651,7 @@ vendor/firmware/a640_zap.mdt
 -vendor/app/gpu_profiling_vulkan_layer/gpu_profiling_vulkan_layer.apk|00194817bafefbf8f83a9d46087ac0a1a18fae6b
 
 # GNSS
+vendor/app/CACertService/CACertService.apk
 vendor/bin/garden_app
 vendor/bin/loc_launcher
 vendor/bin/lowi-server
