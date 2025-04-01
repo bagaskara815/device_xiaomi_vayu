@@ -160,6 +160,7 @@ PRODUCT_COPY_FILES += \
 
 # Device Parts
 PRODUCT_PACKAGES += \
+    XiaomiDolby \
     DeviceParts
 
 # Dex
