@@ -7,10 +7,6 @@
 DEVICE_PATH := device/xiaomi/vayu
 BOARD_VENDOR := xiaomi
 
-BUILD_BROKEN_DUP_RULES := true
-BUILD_BROKEN_ENFORCE_SYSPROP_OWNER := true
-BUILD_BROKEN_MISSING_REQUIRED_MODULES := true
-
 # Architecture
 TARGET_ARCH := arm64
 TARGET_ARCH_VARIANT := armv8-2a-dotprod
