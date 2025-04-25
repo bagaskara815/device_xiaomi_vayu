@@ -651,6 +651,15 @@ vendor/firmware/a640_zap.mdt
 -vendor/app/adreno_graphics_driver/adreno_graphics_driver.apk|48806ee3413a591ab35a262b3c0f88fd8ea85fbf
 -vendor/app/gpu_profiling_vulkan_layer/gpu_profiling_vulkan_layer.apk|00194817bafefbf8f83a9d46087ac0a1a18fae6b
 
+# biji
+vendor/lib64/libcrypto-v34.so
+
+# pler
+vendor/lib/libqcbor.so
+vendor/lib64/libwpa_client.so
+vendor/lib64/libgarden.so
+vendor/lib64/libgarden_haltests_e2e.so
+
 # GNSS
 vendor/app/CACertService/CACertService.apk
 vendor/bin/garden_app
