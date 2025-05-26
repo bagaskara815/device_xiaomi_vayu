@@ -428,12 +428,6 @@ vendor/lib64/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so
 # Consumer IR
 vendor/lib64/hw/consumerir.default.so
 
-# Diag HAL
-vendor/bin/diag-router
-vendor/etc/init/vendor.qti.diag.rc
--vendor/etc/vintf/manifest/vendor.qti.diag.hal.service.xml
-vendor/lib64/vendor.qti.diaghal@1.0.so
-
 # Display (HDR)
 vendor/lib64/libhdr_tm.so
 
