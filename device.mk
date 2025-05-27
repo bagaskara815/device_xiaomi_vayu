@@ -39,32 +39,26 @@ PRODUCT_PACKAGES += \
     android.hardware.audio.effect@6.0-impl \
     android.hardware.audio.service \
     android.hardware.soundtrigger@2.2-impl \
-    audio.primary.msmnile \
     audio.r_submix.default \
     audio.usb.default \
     liba2dpoffload \
     libaudiopreprocessing \
-    libbatterylistener \
     libbundlewrapper \
-    libcomprcapture \
     libdownmix \
     libdynproc \
     libeffectproxy \
-    libexthwplugin \
-    libhdmiedid \
-    libhfp \
     libldnhncr \
     libqcompostprocbundle \
     libreverbwrapper \
     libqcomvisualizer \
     libqcomvoiceprocessing \
-    libsndmonitor \
-    libspkrprot \
     libvisualizer \
     libvolumelistener
 
 PRODUCT_PACKAGES += \
-    libaudioroute.vendor
+    libaudioroute.vendor \
+    libprocessgroup.vendor \
+    libtinycompress
 
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/audio/,$(TARGET_COPY_OUT_VENDOR)/etc)
