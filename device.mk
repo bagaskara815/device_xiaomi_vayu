@@ -568,10 +568,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     vendor.xiaomi.hardware.touchfeature@1.0.vendor
 
-# Tracing
-PRODUCT_PACKAGES += \
-    android.hardware.atrace@1.0-service.pixel
-
 # UFFD GC
 OVERRIDE_ENABLE_UFFD_GC := false
 
