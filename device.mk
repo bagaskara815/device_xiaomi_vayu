@@ -99,7 +99,6 @@ PRODUCT_PACKAGES += \
     android.frameworks.sensorservice@1.0.vendor \
     android.hardware.camera.provider@2.4-impl \
     android.hardware.camera.provider@2.4-service_64 \
-    GCamGOPrebuilt \
     libcamera2ndk_vendor \
     libdng_sdk.vendor \
     libgui.vendor \
@@ -151,14 +150,12 @@ endif
 
 # Display
 PRODUCT_PACKAGES += \
-    android.hardware.graphics.composer@2.4-impl \
     android.hardware.graphics.composer@2.4-service \
     android.hardware.graphics.mapper@3.0-impl-qti-display \
     android.hardware.graphics.mapper@4.0-impl-qti-display \
     gralloc.qcom \
     hwcomposer.qcom \
     libdisplayconfig.qti \
-    libdisplayconfig.qti.vendor \
     libsdmcore \
     libsdmutils \
     libvulkan \
@@ -476,7 +473,6 @@ PRODUCT_PACKAGES += \
     android.hardware.radio.deprecated@1.0.vendor \
     android.hardware.secure_element@1.2.vendor \
     libjson \
-    libjson.vendor \
     libprotobuf-cpp-full \
     librmnetctl
 
@@ -599,8 +595,6 @@ PRODUCT_PACKAGES += \
     vndservicemanager
 
 # VNDK
-PRODUCT_PACKAGES += \
-    com.android.vndk.current.on_vendor
 
 # WiFi
 PRODUCT_PACKAGES += \
