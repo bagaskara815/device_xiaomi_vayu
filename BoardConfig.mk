@@ -7,6 +7,8 @@
 DEVICE_PATH := device/xiaomi/vayu
 BOARD_VENDOR := xiaomi
 
+DISABLE_ARTIFACT_PATH_REQUIREMENTS := true
+
 # Architecture
 TARGET_ARCH := arm64
 TARGET_ARCH_VARIANT := armv8-2a-dotprod
