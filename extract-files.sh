@@ -94,7 +94,7 @@ function blob_fixup() {
 	    echo 'madvise: 1' >> ${2}
 	    ;;
 	vendor/lib/libwvhidl.so | vendor/lib/mediadrm/libwvdrmengine.so | vendor/lib64/libwvhidl.so | vendor/lib64/mediadrm/libwvdrmengine.so)
-            $PATCHELF_TOOL --replace-needed "libcrypto.so" "libcrypto-v34.so" "${2}"
+            $PATCHELF_TOOL --replace-needed "libcrypto.so" "libcrypto-v33.so" "${2}"
             ;;
 	    vendor/lib/libstagefright_soft_ddpdec.so | vendor/lib/libstagefright_soft_ac4dec.so | \
         vendor/lib/libstagefrightdolby.so | vendor/lib64/libstagefright_soft_ddpdec.so | \
