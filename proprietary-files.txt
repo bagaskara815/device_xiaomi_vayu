@@ -1161,8 +1161,8 @@ vendor/lib64/libscveObjectTracker_stub.so
 vendor/lib64/vendor.qti.hardware.scve.objecttracker@1.0.so
 vendor/lib64/vendor.qti.hardware.scve.panorama@1.0.so
 
-# Thermal - from coral 12 SP1A.210812.015-7679548
-vendor/bin/thermal-engine|01cb7dc998c39016b54089c18921ad7d65b3c675
+# Thermal - from coral 3 TP1A.220905.004-892761
+vendor/bin/thermal-engine|d77881eaf15c84f6b8e9a68087aa360347ed922a
 
 # Thermal - from barbet 12 S2B2.211203.006-8015633
 vendor/lib64/libthermalclient.so|0a12301d1557583db10f730d1d3cced841448b99
