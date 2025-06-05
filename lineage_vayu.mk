@@ -12,15 +12,16 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/xiaomi/vayu/device.mk)
 
 # Inherit common DerpFest configurations
-$(call inherit-product, vendor/derp/config/common_full_phone.mk)
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+DERPFEST_BUILD_TYPE := Official
+DERPFEST_BUILD_VARIANT := Stable
 
-PRODUCT_NAME := derp_vayu
+PRODUCT_NAME := lineage_vayu
 PRODUCT_DEVICE := vayu
 PRODUCT_BRAND := POCO
 PRODUCT_MODEL := Poco X3 Pro
 PRODUCT_MANUFACTURER := Xiaomi
 
-DERP_BUILDTYPE := Official
 DERP_VERSION_APPEND_TIME_OF_DAY=true
 TARGET_NOT_USES_BLUR=true
 USE_LEGACY_BOOTANIMATION := true
