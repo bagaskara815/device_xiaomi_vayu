@@ -11,15 +11,15 @@
      limitations under the License.
 -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="org.derpfest.resources.Flash">
+    package="org.lineageos.aperture.overlay.vayu">
 
     <application
-        android:label="FlashOverlay"
+        android:label="ApertureOverlay"
         android:hasCode="false"/>
 
     <overlay
         android:isStatic="true"
         android:priority="1000"
-        android:targetPackage="org.derpfest.flash" />
+        android:targetPackage="org.lineageos.aperture" />
 
 </manifest>
