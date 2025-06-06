@@ -29,7 +29,6 @@ ro.vendor.audio.voice.change.support=true
 ro.vendor.audio.voice.volume.boost=manual
 vendor.audio.adm.buffering.ms=6
 vendor.audio.enable.mirrorlink=false
-vendor.audio.flac.sw.decoder.24bit=true
 vendor.audio.hal.boot.timeout.ms=20000
 vendor.audio.hal.output.suspend.supported=false
 vendor.audio.hw.aac.encoder=false
