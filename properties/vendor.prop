@@ -168,6 +168,7 @@ ro.vendor.audio.soundtrigger.xatx.vop.level.medium=10
 
 # Media
 debug.stagefright.c2inputsurface=-1
+vendor.media.omx=0
 
 # PASR
 vendor.power.pasr.enabled=false
