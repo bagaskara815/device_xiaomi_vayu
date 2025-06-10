@@ -18,11 +18,11 @@ on post-fs-data
     chown system system /sys/module/qti_haptics/parameters/vmax_mv_override
     chmod 0664 /sys/module/qti_haptics/parameters/vmax_mv_override
 
-on property:persist.deviceparts.lcd.hbm=*
-    write /sys/devices/platform/soc/soc:qcom,dsi-display-primary/hbm ${persist.deviceparts.lcd.hbm}
+on property:persist.lcd.hbm_mode=*
+    write /sys/devices/platform/soc/soc:qcom,dsi-display-primary/hbm ${persist.lcd.hbm_mode}
 
-on property:persist.deviceparts.lcd.cabc=*
-    write /sys/devices/platform/soc/soc:qcom,dsi-display-primary/cabc ${persist.deviceparts.lcd.cabc}
+on property:persist.lcd.cabc_mode=*
+    write /sys/devices/platform/soc/soc:qcom,dsi-display-primary/cabc ${persist.lcd.cabc_mode}
 
 on property:persist.deviceparts.game.thermal=game
     setprop vendor.thermal.engine thermal-engine-game.conf

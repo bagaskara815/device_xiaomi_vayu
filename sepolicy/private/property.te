@@ -1,2 +1,2 @@
-# Device Parts
-type deviceparts_prop, property_type;
+# LCD HBM and CABC
+type persist_lcd_prop, property_type, system_property_type;

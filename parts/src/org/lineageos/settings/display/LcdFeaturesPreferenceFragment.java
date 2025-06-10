@@ -34,8 +34,8 @@ public class LcdFeaturesPreferenceFragment extends PreferenceFragment
     public static final String HBM_NODE = "/sys/devices/platform/soc/soc:qcom,dsi-display-primary/hbm";
     public static final String CABC_NODE = "/sys/devices/platform/soc/soc:qcom,dsi-display-primary/cabc";
 
-    public static final String HBM_PROP = "persist.deviceparts.lcd.hbm";
-    public static final String CABC_PROP = "persist.deviceparts.lcd.cabc";
+    public static final String HBM_PROP = "persist.lcd.hbm_mode";
+    public static final String CABC_PROP = "persist.lcd.cabc_mode";
 
     private static final String KEY_HBM = "hbm_pref";
     private static final String KEY_CABC = "cabc_pref";
