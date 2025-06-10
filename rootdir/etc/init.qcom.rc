@@ -461,6 +461,7 @@ on property:vendor.media.target.version=*
 on property:vendor.media.target_variant=*
     setprop ro.media.xml_variant.codecs ${vendor.media.target_variant}
     setprop ro.media.xml_variant.codecs_performance ${vendor.media.target_variant}
+    setprop ro.media.xml_variant.profiles ${vendor.media.target_variant}
 
 on property:vold.decrypt=trigger_restart_framework
     start wcnss-service
