@@ -7,6 +7,7 @@
 DEVICE_PATH := device/xiaomi/vayu
 BOARD_VENDOR := xiaomi
 
+BUILD_BROKEN_ENFORCE_SYSPROP_OWNER := true
 DISABLE_ARTIFACT_PATH_REQUIREMENTS := true
 
 # Architecture
