@@ -542,7 +542,7 @@ PRODUCT_PACKAGES += \
     vendor.xiaomi.hardware.touchfeature@1.0.vendor
 
 # UFFD GC
-OVERRIDE_ENABLE_UFFD_GC := false
+PRODUCT_ENABLE_UFFD_GC := true
 
 # Update
 AB_OTA_UPDATER := false
