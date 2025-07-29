@@ -48,7 +48,7 @@ TARGET_NO_BOOTLOADER := true
 TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/config.fs
 
 # Init
-TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_xiaomi_vayu
+$(call soong_config_set,libinit,vendor_init_lib,//$(DEVICE_PATH):libinit_xiaomi_vayu)
 
 # Display
 TARGET_SCREEN_DENSITY := 410
