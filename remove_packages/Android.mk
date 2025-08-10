@@ -16,14 +16,17 @@ LOCAL_OVERRIDES_PACKAGES := \
     FilesPrebuilt  \
     Gramophone \
     Maestro \
+    Matlog \
     Maps \
     PersonalSafety \
     RecorderPrebuilt \
     SafetyHubPrebuilt \
     Symphonica \
     Tycho \
+    Twelve \
     VoiceAccessPrebuilt \
     VZWAPNLib \
+    YASR \
     YouTube
 
 LOCAL_UNINSTALLABLE_MODULE := true
