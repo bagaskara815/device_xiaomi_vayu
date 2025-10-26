@@ -5,6 +5,9 @@ audio.sys.routing.latency=0
 audio.offload.min.duration.secs=30
 audio.sys.offload.pstimeout.secs=3
 
+# BPF
+ro.bpf.kver_override=5.4.186
+
 # Graphics
 debug.graphics.game_default_frame_rate.disabled=true
 
