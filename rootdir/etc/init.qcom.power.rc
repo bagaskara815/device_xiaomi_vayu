@@ -80,8 +80,6 @@ on property:init.svc.recovery=running
 
 on property:sys.boot_completed=1
     trigger enable-low-power
-    # Disable native stats collection service
-    stop statsd
 
 on early-init
     # configure governor settings
