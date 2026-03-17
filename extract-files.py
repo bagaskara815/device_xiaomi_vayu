@@ -49,7 +49,6 @@ lib_fixups: lib_fixups_user_type = {
     (
         'libOmxCore',
         'libgrallocutils',
-        'libwpa_client',
     ): lib_fixup_remove,
 }
 
