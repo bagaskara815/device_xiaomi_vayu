@@ -35,6 +35,7 @@ public class TileEntryActivity extends Activity {
     private static final String HBM_TILE = "org.lineageos.settings.display.HbmTileService";
     private static final String CABC_TILE = "org.lineageos.settings.display.CabcTileService";
     private static final String REFRESH_RATE_TILE = "org.lineageos.settings.RefreshRateTileService";
+    private static final String BYPASS_TILE = "org.lineageos.settings.charging.BypassTileService";
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -52,6 +53,9 @@ public class TileEntryActivity extends Activity {
                 Intent targetIntent = new Intent(Intent.ACTION_MAIN);
                 targetIntent.setComponent(ComponentName.unflattenFromString(SETTINGS_DISPLAY_COMPONENT));
                 openActivitySafely(targetIntent);
+                break;
+            case BYPASS_TILE:
+                finish();
                 break;
             default:
                 finish();

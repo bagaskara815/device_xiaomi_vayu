@@ -1,2 +1,6 @@
 # Allow deviceparts_app to lookup vendor_sysfs_graphics
 allow deviceparts_app vendor_sysfs_graphics:dir search;
+
+# Bypass charging — direct sysfs write
+allow deviceparts_app vendor_sysfs_battery_supply:dir search;
+allow deviceparts_app vendor_sysfs_battery_supply:file rw_file_perms;
