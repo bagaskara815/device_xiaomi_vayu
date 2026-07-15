@@ -49,24 +49,21 @@ void property_override(char const prop[], char const value[], bool add = true)
         __system_property_add(prop, strlen(prop), value, strlen(value));
 }
 
-void load_dalvik_properties() 
+void load_dalvik_properties()
 {
     struct sysinfo sys;
 
     sysinfo(&sys);
-    if (sys.totalram < 7000ull * 1024 * 1024) 
-    {
+    if (sys.totalram < 7000ull * 1024 * 1024) {
         // 6GB RAM
         property_override("dalvik.vm.heapstartsize", "16m");
-        property_override("dalvik.vm.heaptargetutilization", "0.5");
+        property_override("dalvik.vm.heaptargetutilization", "0.75");
         property_override("dalvik.vm.heapmaxfree", "32m");
-    } 
-    else 
-    {
+    } else {
         // 8GB RAM
-        property_override("dalvik.vm.heapstartsize", "24m");
-        property_override("dalvik.vm.heaptargetutilization", "0.46");
-        property_override("dalvik.vm.heapmaxfree", "48m");
+        property_override("dalvik.vm.heapstartsize", "16m");
+        property_override("dalvik.vm.heaptargetutilization", "0.75");
+        property_override("dalvik.vm.heapmaxfree", "64m");
     }
 
     property_override("dalvik.vm.heapgrowthlimit", "256m");
