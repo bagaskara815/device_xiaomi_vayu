@@ -30,6 +30,3 @@ on property:persist.deviceparts.game.thermal=game
 on property:persist.deviceparts.game.thermal=normal
     setprop vendor.thermal.engine thermal-engine.conf
 
-on property:persist.deviceparts.bypass=*
-    write /sys/class/power_supply/battery/input_suspend ${persist.deviceparts.bypass}
-
