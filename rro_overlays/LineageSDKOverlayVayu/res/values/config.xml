@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: The LineageOS Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources>
+    <!--
+         LED capabilities bitfield (aligned with official LOS vayu):
+         LIGHTS_ADJUSTABLE_NOTIFICATION_LED_BRIGHTNESS = 32
+         LIGHTS_BATTERY_LED = 64
+         LIGHTS_ADJUSTABLE_BATTERY_LED_BRIGHTNESS = 128
+         → 224
+    -->
+    <integer name="config_deviceLightCapabilities">224</integer>
+</resources>

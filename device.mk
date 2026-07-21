@@ -23,8 +23,9 @@ $(call inherit-product, hardware/qcom-caf/common/common.mk)
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 
-# Device can have background blurs
-TARGET_USES_BLUR := true
+# Boot animation
+TARGET_SCREEN_HEIGHT := 2400
+TARGET_SCREEN_WIDTH := 1080
 
 # Shipping level
 PRODUCT_SHIPPING_API_LEVEL := 30
@@ -404,17 +405,21 @@ PRODUCT_PACKAGES += \
     android.hardware.neuralnetworks@1.3-service-qti-vayu.rc
 
 # Overlays
+PRODUCT_ENFORCE_RRO_TARGETS := *
+
 PRODUCT_PACKAGES += \
-   ApertureOverlay \
-   CarrierConfigOverlayVayu \
-   DialerOverlayVayu \
-   FrameworksResOverlayVayu \
-   SettingsOverlayVayu \
-   SettingsProviderOverlayVayu \
-   SystemUIOverlayVayu \
-   TelephonyOverlayVayu \
-   TetheringConfigOverlayVayu \
-   WifiOverlayVayu
+    ApertureOverlay \
+    CarrierConfigOverlayVayu \
+    DialerOverlayVayu \
+    FrameworksResOverlayVayu \
+    LineageSDKOverlayVayu \
+    LineageSettingsOverlayVayu \
+    SettingsOverlayVayu \
+    SettingsProviderOverlayVayu \
+    SystemUIOverlayVayu \
+    TelephonyOverlayVayu \
+    TetheringConfigOverlayVayu \
+    WifiOverlayVayu
 
 # Power
 PRODUCT_PACKAGES += \
@@ -438,10 +443,6 @@ include $(LOCAL_PATH)/properties/default.mk
 # QDCM
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/qdcm/,$(TARGET_COPY_OUT_VENDOR)/etc)
-
-# Quick Tap
-PRODUCT_PACKAGES += \
-    ColumbusService
 
 # RIL
 PRODUCT_PACKAGES += \
@@ -472,10 +473,6 @@ PRODUCT_PACKAGES += \
     android.hardware.sensors@1.0-impl \
     android.hardware.sensors@1.0-service \
     libsensorndkbridge
-
-# Remove unwanted packages
-PRODUCT_PACKAGES += \
-    RemovePackagesVayu
 
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.sensor.accelerometer.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.sensor.accelerometer.xml \
