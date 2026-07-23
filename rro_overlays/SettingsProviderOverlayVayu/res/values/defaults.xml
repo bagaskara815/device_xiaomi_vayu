@@ -29,4 +29,8 @@
     <!-- 30 seconds for default screen timeout -->
     <integer name="def_screen_off_timeout">30000</integer>
 
+    <!-- Window animation/transition scale 50% (snappier UI defaults) -->
+    <fraction name="def_window_animation_scale">50%</fraction>
+    <fraction name="def_window_transition_scale">50%</fraction>
+
 </resources>
