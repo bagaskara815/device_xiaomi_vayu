@@ -43,6 +43,14 @@ public class HbmTileService extends TileService {
     }
 
     private void updateCurrentHbmMode() {
+        String line = FileUtils.readOneLine(HBM_NODE);
+        if (line != null && !line.isEmpty()) {
+            try {
+                currentHbmMode = Integer.parseInt(line.trim());
+                return;
+            } catch (NumberFormatException ignored) {
+            }
+        }
         currentHbmMode = SystemProperties.getInt(HBM_PROP, HBM_MODE_OFF);
     }
 
@@ -75,7 +83,9 @@ public class HbmTileService extends TileService {
         super.onClick();
         updateCurrentHbmMode();
         currentHbmMode = currentHbmMode != HBM_MODE_ON ? HBM_MODE_ON : HBM_MODE_OFF;
-        SystemProperties.set(HBM_PROP, Integer.toString(currentHbmMode));
+        final String mode = Integer.toString(currentHbmMode);
+        SystemProperties.set(HBM_PROP, mode);
+        FileUtils.writeLine(HBM_NODE, mode);
         updateHbmTile();
     }
 }

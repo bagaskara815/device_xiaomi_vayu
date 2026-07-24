@@ -1,8 +1,11 @@
 # Allow deviceparts_app to lookup vendor_sysfs_graphics
 allow deviceparts_app vendor_sysfs_graphics:dir search;
+allow deviceparts_app vendor_sysfs_graphics:file rw_file_perms;
 
 # Bypass charging
 allow deviceparts_app sysfs_battery_supply:dir search;
 allow deviceparts_app sysfs_battery_supply:file rw_file_perms;
 allow deviceparts_app vendor_sysfs_battery_supply:dir search;
 allow deviceparts_app vendor_sysfs_battery_supply:file rw_file_perms;
+
+allow deviceparts_app sysfs_livedisplay_tuneable:file rw_file_perms;

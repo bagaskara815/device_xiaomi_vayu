@@ -76,21 +76,39 @@ public class LcdFeaturesPreferenceFragment extends PreferenceFragment
 
         if (key.equals(KEY_HBM)) {
             boolean isHbmEnabled = (Boolean) newValue;
+            final String mode = String.valueOf(isHbmEnabled ? HBM_MODE_ON : HBM_MODE_OFF);
             mHbmPref.setChecked(isHbmEnabled);
-            SystemProperties.set(HBM_PROP,
-                String.valueOf(isHbmEnabled ? HBM_MODE_ON : HBM_MODE_OFF));
+            SystemProperties.set(HBM_PROP, mode);
+            FileUtils.writeLine(HBM_NODE, mode);
         } else if (key.equals(KEY_CABC)) {
-            mCabcPref.setValue((String) newValue);
+            final String mode = (String) newValue;
+            mCabcPref.setValue(mode);
             mCabcPref.setSummary(mCabcPref.getEntry());
-            SystemProperties.set(CABC_PROP, (String) newValue);
+            SystemProperties.set(CABC_PROP, mode);
+            FileUtils.writeLine(CABC_NODE, mode);
         }
 
         return true;
     }
 
     private void restorePreferenceState() {
-        boolean isHbmEnabled = SystemProperties.getInt(HBM_PROP, HBM_MODE_OFF) > HBM_MODE_OFF;
-        String activeCabc = SystemProperties.get(CABC_PROP, "0");
+        String hbmLine = FileUtils.readOneLine(HBM_NODE);
+        boolean isHbmEnabled;
+        if (hbmLine != null && !hbmLine.isEmpty()) {
+            try {
+                isHbmEnabled = Integer.parseInt(hbmLine.trim()) > HBM_MODE_OFF;
+            } catch (NumberFormatException e) {
+                isHbmEnabled = SystemProperties.getInt(HBM_PROP, HBM_MODE_OFF) > HBM_MODE_OFF;
+            }
+        } else {
+            isHbmEnabled = SystemProperties.getInt(HBM_PROP, HBM_MODE_OFF) > HBM_MODE_OFF;
+        }
+        String activeCabc = FileUtils.readOneLine(CABC_NODE);
+        if (activeCabc == null || activeCabc.isEmpty()) {
+            activeCabc = SystemProperties.get(CABC_PROP, "0");
+        } else {
+            activeCabc = activeCabc.trim();
+        }
         mHbmPref.setChecked(isHbmEnabled);
         mCabcPref.setValue(activeCabc);
         mCabcPref.setSummary(mCabcPref.getEntry());

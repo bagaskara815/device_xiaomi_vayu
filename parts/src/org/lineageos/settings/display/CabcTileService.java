@@ -44,7 +44,14 @@ public class CabcTileService extends TileService {
     }
 
     private void updateCurrentCabcMode() {
-        currentCabcMode = Arrays.asList(CabcValues).indexOf(SystemProperties.get(LcdFeaturesPreferenceFragment.CABC_PROP, "0"));
+        String line = FileUtils.readOneLine(LcdFeaturesPreferenceFragment.CABC_NODE);
+        String value = (line != null && !line.isEmpty())
+                ? line.trim()
+                : SystemProperties.get(LcdFeaturesPreferenceFragment.CABC_PROP, "0");
+        currentCabcMode = Arrays.asList(CabcValues).indexOf(value);
+        if (currentCabcMode < 0) {
+            currentCabcMode = 0;
+        }
     }
 
     private void updateCabcTile() {
@@ -77,7 +84,9 @@ public class CabcTileService extends TileService {
         } else {
             currentCabcMode++;
         }
-        SystemProperties.set(LcdFeaturesPreferenceFragment.CABC_PROP, CabcValues[currentCabcMode]);
+        final String mode = CabcValues[currentCabcMode];
+        SystemProperties.set(LcdFeaturesPreferenceFragment.CABC_PROP, mode);
+        FileUtils.writeLine(LcdFeaturesPreferenceFragment.CABC_NODE, mode);
         updateCabcTile();
     }
 }
