@@ -132,6 +132,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
    libstdc++_vendor
 
+# MIUI camera
+$(call inherit-product, vendor/xiaomi/vayu-camera/vayu-camera.mk)
+
 # Charger
 PRODUCT_PACKAGES += \
     libsuspend
@@ -392,9 +395,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/media/media_profiles_V1_0.xml:$(TARGET_COPY_OUT_ODM)/etc/media_profiles_V1_0.xml \
     $(LOCAL_PATH)/configs/media/media_profiles_vendor.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_vendor.xml \
     $(LOCAL_PATH)/configs/permissions/system_ext-privapp-permissions-qti.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-qti.xml
-
-# MiuiCamera
--include vendor/xiaomi/miuicamera/config.mk
 
 # Network
 PRODUCT_PACKAGES += \

@@ -170,7 +170,6 @@ vendor/lib64/libalLDC.so;DISABLE_CHECKELF
 vendor/lib64/libalhLDC.so;DISABLE_CHECKELF
 vendor/lib64/libarcdualcamsat.so
 vendor/lib64/libc++_shared.so
-vendor/lib64/libcamera_dirty.so
 vendor/lib64/libcamera_nn_stub.so
 vendor/lib64/libcamera_scene.so
 vendor/lib64/libcapiv2svacnn.so
@@ -191,7 +190,6 @@ vendor/lib64/libmialgo_sd.so
 vendor/lib64/libmialgo_utils.so
 vendor/lib64/libmialgo_video_colourkeeping.so
 vendor/lib64/libmialgo_video_seg.so
-vendor/lib64/libmialgoengine.so;DISABLE_CHECKELF
 vendor/lib64/libmibokeh_712.so
 vendor/lib64/libmibokeh_845_video.so
 vendor/lib64/libmibokeh_855.so
@@ -303,6 +301,18 @@ vendor/lib64/camera/components/etc/visidon_clearshot_params.xml
 vendor/lib64/camera/components/libdepthmapwrapper.so
 
 # Camera configs
+vendor/etc/camera/104_Meet.png|6311603a50532eece3f92cce50898a29c1d4995c
+vendor/etc/camera/108_NorthernEurope.png|b6a0847fcf1d87d5db0cae2c9a589b9780e1cbbe
+vendor/etc/camera/109_Rome.png|d5eb2a236ff03ef1a18a06323ed7ea1e10d3216f
+vendor/etc/camera/110_BlackGold.png|bf0b84c9cc417a78f38fa01606160a80d0fda3d2
+vendor/etc/camera/121_BBP.png|471e397956b24ae92d1ba569a93eb909feaa0e18
+vendor/etc/camera/122_Mysterious.png|97aa16bbc50960586807aad5634fa7a86a7527a7
+vendor/etc/camera/123_GreenOrange.png|7ccb8c48068296275ab440129750cddc47e26f4d
+vendor/etc/camera/124_SummerDay.png|e27c1ad14c763cbc0159aa5a0357b934cbc16ced
+vendor/etc/camera/125_Latin.png|eac04636de0aeac2480a3be9d1f0e04f58ddfd0b
+vendor/etc/camera/126_Fantasy.png|0eb52c60f767c4a9b26b22f4ee35ec646545a123
+vendor/etc/camera/127_DustDream.png|ff8d0877d85b556ed5be6648bcc2ef925856beb9
+vendor/etc/camera/128_MongKok.png|b0dbf17da4c971b30ad15c0293c1a43eb087e67c
 vendor/etc/camera/CFR_para_T.bin
 vendor/etc/camera/CFR_para_UW.bin
 vendor/etc/camera/CFR_para_W.bin
@@ -334,9 +344,10 @@ vendor/etc/camera/morpho_lowlight4.0_adrc_high.xml
 vendor/etc/camera/morpho_lowlight4.0_adrc_high_1.xml
 vendor/etc/camera/sceneDetection.xml
 vendor/etc/camera/seg_quantized.dlc
-vendor/etc/camera/sr_params.xml|61e04e3da6068d84e9ac2871b786cfb0acab199c
 vendor/etc/camera/vidhance_calibration
 vendor/etc/camera/visidon_clearshot_params_algoup.xml
+vendor/etc/camera/sr_params.xml|fb9796cde5473fb413d0a4dffe52be4d2ff6804d
+vendor/etc/camera/st_license.lic|2696764c5292a9a2480a129e3a71b9c14d256729
 
 # Camera firmware
 vendor/firmware/CAMERA_ICP.elf
