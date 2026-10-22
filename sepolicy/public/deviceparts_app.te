@@ -1,1 +1,1 @@
-type deviceparts_app, domain;
+type deviceparts_app, domain, coredomain;
