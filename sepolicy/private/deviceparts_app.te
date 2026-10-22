@@ -29,13 +29,9 @@ allow deviceparts_app system_app_data_file:{ file lnk_file } create_file_perms;
 binder_call(deviceparts_app, gpuservice)
 binder_call(deviceparts_app, hal_touchfeature)
 
-# Allow deviceparts_app to read and write to cgroup/sysfs_leds/sysfs_thermal
-allow deviceparts_app sysfs_leds:dir search;
-allow deviceparts_app {
-  cgroup
-  sysfs_leds
-  sysfs_thermal
-}:{ file lnk_file } rw_file_perms;
+# Allow deviceparts_app to read and write to cgroup/sysfs_thermal
+allow deviceparts_app cgroup:{ file lnk_file } rw_file_perms;
+allow deviceparts_app sysfs_thermal:{ file lnk_file } rw_file_perms;
 
 # Allow xiaomi_settings to read and write to sysfs_vibrator
 allow deviceparts_app sysfs_vibrator:dir search;
