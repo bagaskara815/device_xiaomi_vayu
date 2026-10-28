@@ -318,6 +318,10 @@ PRODUCT_PACKAGES += \
     init.xiaomi.rc \
     ueventd.qcom.rc
 
+# Remove unwanted packages
+PRODUCT_PACKAGES += \
+    RemovePackagesVayu
+
 # Shipping API level
 PRODUCT_SHIPPING_API_LEVEL := 30
 
