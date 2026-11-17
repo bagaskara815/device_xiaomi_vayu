@@ -23,12 +23,13 @@ LOCAL_OVERRIDES_PACKAGES := \
     Maps \
     Panic \
     PersonalSafety \
+	PrebuiltGmail \
     RecorderPrebuilt \
     Ripple \
     SafetyHubPrebuilt \
-    ScribePrebuilt_v8.4.773573318 \
+    ScribePrebuilt_v8.7.880674799 \
     Symphonica \
-    SwitchAccessPrebuilt_1.16.0.726766860 \
+    SwitchAccessPrebuilt_1.17.0.877181440 \
     TurboAdapter \
     Tycho \
     UdfpsAnimations \
