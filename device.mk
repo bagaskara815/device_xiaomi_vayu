@@ -93,8 +93,15 @@ PRODUCT_PACKAGES += \
 $(call soong_config_set_bool,android_hardware_audio,skip_speaker_layout_channel_mask_field,true)
 
 # Audio configs
+PRODUCT_PACKAGES += \
+    libstagefright_foundation-v33
+
 PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/dolby/dax-default.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dolby/dax-default.xml \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/audio/,$(TARGET_COPY_OUT_VENDOR)/etc)
+
+# Disable AOSP AudioFX, Motorola Dolby DAX3 takes over its role
+TARGET_EXCLUDES_AUDIOFX := true
 
 PRODUCT_COPY_FILES += \
     frameworks/av/services/audiopolicy/config/audio_policy_volumes.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_volumes.xml \
@@ -208,6 +215,7 @@ PRODUCT_PACKAGES += \
 # Media configs
 PRODUCT_PACKAGES += \
     media_codecs_c2.xml \
+    media_codecs_dolby_audio.xml \
     media_codecs_performance_c2.xml
 
 # NFC

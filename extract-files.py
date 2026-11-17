@@ -74,6 +74,16 @@ blob_fixups: blob_fixups_user_type = {
         ),
     'vendor/etc/init/init.mi_thermald.rc': blob_fixup()
         .regex_replace(r'seclabel u:r:mi_thermald:s0', ''),
+    (
+        'vendor/lib/libstagefright_soft_ac4dec.so',
+        'vendor/lib/libstagefright_soft_ddpdec.so',
+        'vendor/lib/libstagefrightdolby.so',
+        'vendor/lib64/libdlbdsservice.so',
+        'vendor/lib64/libstagefright_soft_ac4dec.so',
+        'vendor/lib64/libstagefright_soft_ddpdec.so',
+        'vendor/lib64/libstagefrightdolby.so',
+    ): blob_fixup()
+        .replace_needed('libstagefright_foundation.so', 'libstagefright_foundation-v33.so'),
     'vendor/lib64/libdpps.so': blob_fixup()
         .replace_needed('libtinyxml2.so', 'libtinyxml2-v34.so'),
     'vendor/lib64/libwvhidl.so': blob_fixup()
