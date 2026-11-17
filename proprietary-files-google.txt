@@ -1,7 +1,0 @@
-# All unpinned blobs below are extracted from nabu_globalin-user 13 RKQ1.200826.002 V816.0.18.0.TKXINXM release-keys
-
-# HotwordEnrollment
-product/priv-app/HotwordEnrollmentOKGoogleHEXAGON_WIDEBAND/HotwordEnrollmentOKGoogleHEXAGON_WIDEBAND.apk
-product/priv-app/HotwordEnrollmentXGoogleHEXAGON_WIDEBAND/HotwordEnrollmentXGoogleHEXAGON_WIDEBAND.apk
-system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml
-system_ext/framework/com.android.hotwordenrollment.common.util.jar

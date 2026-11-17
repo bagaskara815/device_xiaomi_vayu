@@ -5,4 +5,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/yaap_vayu.mk
+    $(LOCAL_DIR)/lineage_vayu.mk

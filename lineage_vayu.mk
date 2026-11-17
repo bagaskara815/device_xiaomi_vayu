@@ -9,13 +9,15 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit some common YAAP stuff.
-$(call inherit-product, vendor/yaap/config/common_full_phone.mk)
+# Inherit some common DerpFest stuff.
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+DERPFEST_BUILD_TYPE := Official
+DERPFEST_BUILD_VARIANT := Stable
 
 # Inherit from vayu device
 $(call inherit-product, device/xiaomi/vayu/device.mk)
 
-PRODUCT_NAME := yaap_vayu
+PRODUCT_NAME := lineage_vayu
 PRODUCT_DEVICE := vayu
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BRAND := POCO

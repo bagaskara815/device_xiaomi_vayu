@@ -1094,3 +1094,9 @@ vendor/etc/wifi/aoa_cldb_swl14.bin|2a3be07a8f24bc1b9798d07c7133b0f71b77738f
 
 # Xiaomi MAC
 vendor/bin/nv_mac
+
+# HotwordEnrollment
+product/priv-app/HotwordEnrollmentOKGoogleHEXAGON_WIDEBAND/HotwordEnrollmentOKGoogleHEXAGON_WIDEBAND.apk
+product/priv-app/HotwordEnrollmentXGoogleHEXAGON_WIDEBAND/HotwordEnrollmentXGoogleHEXAGON_WIDEBAND.apk
+system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml
+system_ext/framework/com.android.hotwordenrollment.common.util.jar
