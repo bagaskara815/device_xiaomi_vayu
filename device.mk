@@ -265,7 +265,8 @@ PRODUCT_PACKAGES += \
     ApertureOverlayVayu \
     CarrierConfigOverlayVayu \
     FrameworkResOverlayVayu \
-    YAAPSettingsOverlayVayu \
+	LineageDialerOverlayVayu \
+	LineageSDKOverlayVayu \
     SettingsOverlayVayu \
     SettingsProviderOverlayVayu \
     SystemUIOverlayVayu \
